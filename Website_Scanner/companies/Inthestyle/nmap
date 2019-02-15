@@ -1,0 +1,24 @@
+
+Starting Nmap 7.60 ( https://nmap.org ) at 2019-02-12 16:27 GMT
+Nmap scan report for inthestyle.com (54.154.81.162)
+Host is up (0.032s latency).
+Other addresses for inthestyle.com (not scanned): 54.73.3.153
+rDNS record for 54.154.81.162: ec2-54-154-81-162.eu-west-1.compute.amazonaws.com
+Not shown: 998 filtered ports
+PORT    STATE SERVICE  VERSION
+80/tcp  open  http     Apache httpd
+|_http-title: Did not follow redirect to https://inthestyle.com/
+443/tcp open  ssl/http Apache httpd
+|_http-title: Did not follow redirect to https://www.inthestyle.com/
+| ssl-cert: Subject: commonName=*.inthestyle.com/organizationName=In The Style Fashion LTD/stateOrProvinceName=Springfield Lane/countryName=GB
+| Subject Alternative Name: DNS:*.inthestyle.com, DNS:inthestyle.com
+| Not valid before: 2017-01-24T00:00:00
+|_Not valid after:  2020-04-23T23:59:59
+|_ssl-date: TLS randomness does not represent time
+| tls-nextprotoneg: 
+|   h2
+|_  http/1.1
+Service Info: Host: inthe-front-az3vgbwdplxv-1649597440.eu-west-1.elb.amazonaws.com
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 19.83 seconds

@@ -1,0 +1,87 @@
+
+Starting Nmap 7.60 ( https://nmap.org ) at 2019-02-12 15:38 GMT
+Nmap scan report for augeosai.com (198.54.116.239)
+Host is up (0.16s latency).
+rDNS record for 198.54.116.239: server227-5.web-hosting.com
+Not shown: 987 filtered ports
+PORT     STATE SERVICE        VERSION
+21/tcp   open  ftp            Pure-FTPd
+| ssl-cert: Subject: commonName=*.web-hosting.com
+| Subject Alternative Name: DNS:*.web-hosting.com, DNS:web-hosting.com
+| Not valid before: 2018-02-06T00:00:00
+|_Not valid after:  2020-04-04T23:59:59
+|_ssl-date: 2019-02-12T15:40:58+00:00; 0s from scanner time.
+25/tcp   open  smtp?
+|_smtp-commands: Couldn't establish connection on port 25
+26/tcp   open  smtp           Exim smtpd 4.91
+| smtp-commands: server227.web-hosting.com Hello augeosai.com [194.66.32.96], SIZE 52428800, 8BITMIME, PIPELINING, AUTH PLAIN LOGIN, STARTTLS, HELP, 
+|_ Commands supported: AUTH STARTTLS HELO EHLO MAIL RCPT DATA BDAT NOOP QUIT RSET HELP 
+| ssl-cert: Subject: commonName=www.augeosai.com
+| Subject Alternative Name: DNS:www.augeosai.com, DNS:augeosai.com
+| Not valid before: 2018-12-31T00:00:00
+|_Not valid after:  2019-12-31T23:59:59
+|_ssl-date: 2019-02-12T15:40:58+00:00; 0s from scanner time.
+53/tcp   open  domain         ISC BIND 9.8.2rc1
+| dns-nsid: 
+|_  bind.version: 9.8.2rc1-RedHat-9.8.2-0.68.rc1.el6_10.1
+80/tcp   open  http-proxy     HAProxy http proxy 1.3.1 or later
+|_http-open-proxy: Proxy might be redirecting requests
+|_http-server-header: Apache
+|_http-title: Did not follow redirect to https://augeosai.com/
+110/tcp  open  pop3           Dovecot pop3d
+|_pop3-capabilities: STLS RESP-CODES SASL(PLAIN LOGIN) USER CAPA AUTH-RESP-CODE PIPELINING UIDL TOP
+| ssl-cert: Subject: commonName=www.augeosai.com
+| Subject Alternative Name: DNS:www.augeosai.com, DNS:augeosai.com
+| Not valid before: 2018-12-31T00:00:00
+|_Not valid after:  2019-12-31T23:59:59
+|_ssl-date: 2019-02-12T15:40:59+00:00; 0s from scanner time.
+143/tcp  open  imap           Dovecot imapd
+|_imap-capabilities: STARTTLS AUTH=LOGINA0001 IMAP4rev1 more LOGIN-REFERRALS Pre-login NAMESPACE IDLE OK have post-login SASL-IR ENABLE AUTH=PLAIN listed capabilities ID LITERAL+
+| ssl-cert: Subject: commonName=www.augeosai.com
+| Subject Alternative Name: DNS:www.augeosai.com, DNS:augeosai.com
+| Not valid before: 2018-12-31T00:00:00
+|_Not valid after:  2019-12-31T23:59:59
+|_ssl-date: 2019-02-12T15:40:57+00:00; -1s from scanner time.
+443/tcp  open  ssl/http-proxy HAProxy http proxy 1.3.1 or later
+|_http-server-header: Apache
+|_http-title: Augeos AI &mdash; Build Intelligent Energy Solutions
+| ssl-cert: Subject: commonName=www.augeosai.com
+| Subject Alternative Name: DNS:www.augeosai.com, DNS:augeosai.com
+| Not valid before: 2018-12-31T00:00:00
+|_Not valid after:  2019-12-31T23:59:59
+|_ssl-date: TLS randomness does not represent time
+465/tcp  open  ssl/smtp       Exim smtpd 4.91
+| smtp-commands: server227.web-hosting.com Hello augeosai.com [194.66.32.96], SIZE 52428800, 8BITMIME, PIPELINING, AUTH PLAIN LOGIN, HELP, 
+|_ Commands supported: AUTH HELO EHLO MAIL RCPT DATA BDAT NOOP QUIT RSET HELP 
+| ssl-cert: Subject: commonName=www.augeosai.com
+| Subject Alternative Name: DNS:www.augeosai.com, DNS:augeosai.com
+| Not valid before: 2018-12-31T00:00:00
+|_Not valid after:  2019-12-31T23:59:59
+|_ssl-date: 2019-02-12T15:40:59+00:00; 0s from scanner time.
+587/tcp  open  smtp           Exim smtpd 4.91
+| smtp-commands: server227.web-hosting.com Hello augeosai.com [194.66.32.96], SIZE 52428800, 8BITMIME, PIPELINING, AUTH PLAIN LOGIN, STARTTLS, HELP, 
+|_ Commands supported: AUTH STARTTLS HELO EHLO MAIL RCPT DATA BDAT NOOP QUIT RSET HELP 
+| ssl-cert: Subject: commonName=www.augeosai.com
+| Subject Alternative Name: DNS:www.augeosai.com, DNS:augeosai.com
+| Not valid before: 2018-12-31T00:00:00
+|_Not valid after:  2019-12-31T23:59:59
+|_ssl-date: 2019-02-12T15:41:08+00:00; 0s from scanner time.
+993/tcp  open  ssl/imap       Dovecot imapd
+|_imap-capabilities: AUTH=LOGINA0001 IMAP4rev1 more LOGIN-REFERRALS Pre-login NAMESPACE IDLE OK have post-login SASL-IR ENABLE AUTH=PLAIN listed capabilities ID LITERAL+
+| ssl-cert: Subject: commonName=www.augeosai.com
+| Subject Alternative Name: DNS:www.augeosai.com, DNS:augeosai.com
+| Not valid before: 2018-12-31T00:00:00
+|_Not valid after:  2019-12-31T23:59:59
+|_ssl-date: 2019-02-12T15:40:58+00:00; 0s from scanner time.
+995/tcp  open  ssl/pop3       Dovecot pop3d
+|_pop3-capabilities: TOP CAPA USER RESP-CODES PIPELINING UIDL SASL(PLAIN LOGIN) AUTH-RESP-CODE
+| ssl-cert: Subject: commonName=www.augeosai.com
+| Subject Alternative Name: DNS:www.augeosai.com, DNS:augeosai.com
+| Not valid before: 2018-12-31T00:00:00
+|_Not valid after:  2019-12-31T23:59:59
+|_ssl-date: 2019-02-12T15:41:00+00:00; 0s from scanner time.
+5666/tcp open  tcpwrapped
+Service Info: Host: server227.web-hosting.com; OS: Red Hat Enterprise Linux 6; Device: load balancer; CPE: cpe:/o:redhat:enterprise_linux:6
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 202.12 seconds
